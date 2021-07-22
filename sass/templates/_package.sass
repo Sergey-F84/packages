@@ -17,12 +17,15 @@
     column-gap: 30px
     row-gap: 30px
   &-card
+    display: grid
+    grid-template-rows: 1fr 1fr
     height: 500px
     border-radius: 8px
     overflow: hidden
   &-image
     position: relative
   &__image
+    position: absolute
     width: 100%
     height: 100%
   &-info
@@ -45,10 +48,21 @@
       font-size: 14px
       line-height: 160.6%
       color: $light
+  &-description
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    grid-row-gap: 11px
+    align-items: center
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
 .flash-button
   position: absolute
   padding: 4px 9px
-  left: 0
+  left: -4px
   top: 26px
   font-style: normal
   font-weight: 600
@@ -64,6 +78,7 @@
 .card1-grid
   display: grid
   grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr
   grid-column-start: 1
   grid-column-end: 3
 .package__button
@@ -80,3 +95,5 @@
   border: none
   border-radius: 4px
   cursor: pointer
+  &-one
+    bottom: 30px
