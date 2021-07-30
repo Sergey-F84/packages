@@ -65,6 +65,15 @@
   .card
     width: 339px
     height: 255px
+  .package
+    &__title
+      margin-bottom: 57px
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 20px
+    &-info
+      &--one
+        padding: 30px 20px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -156,6 +165,12 @@
         text-align: left
   .card
     width: 48%
+  .package
+    &-info
+      &__text
+        margin-bottom: 27px
+    &-description
+      margin-bottom: 27px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -185,3 +200,8 @@
       line-height: 23px
   .card
     width: 100%
+  .package
+    &-wrapper
+      grid-template-rows: auto
+      grid-template-columns: 1fr
+      // grid-gap: 20px
