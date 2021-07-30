@@ -22,6 +22,12 @@
     height: 500px
     border-radius: 8px
     overflow: hidden
+  &-card1
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    grid-column-start: 1
+    grid-column-end: 3
   &-image
     position: relative
   &__image
@@ -67,7 +73,7 @@
       line-height: 15px
       color: $light
   &-description-one
-    margin-bottom: 37px
+    margin-bottom: 40px
   &-price
     display: grid
     grid-template-rows: auto 1fr
@@ -100,12 +106,6 @@
   cursor: pointer
 .flash-button--one
   padding: 8px 12px
-.card1-grid
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-template-rows: 1fr
-  grid-column-start: 1
-  grid-column-end: 3
 .package__button
   position: absolute
   padding: 10px 26px

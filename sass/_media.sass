@@ -13,6 +13,10 @@
   .card
     width: 230px
     height: 230px
+  .package
+    &-description
+      &-one
+        margin-bottom: 25px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -73,7 +77,12 @@
       grid-gap: 20px
     &-info
       &--one
-        padding: 30px 20px
+        padding: 35px 20px 30px 40px
+      &__text
+        margin-bottom: 45px
+    &-description
+      &-one
+        margin-bottom: 40px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -167,10 +176,20 @@
     width: 48%
   .package
     &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-around
       &__text
-        margin-bottom: 27px
+        margin-bottom: 30px
+        overflow: auto
+      &--one
+        padding: 30px 20px
     &-description
-      margin-bottom: 27px
+      grid-row-gap: 5px
+      margin-bottom: 5px
+    &__button
+      padding-left: 15px
+      padding-right: 15px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -202,6 +221,21 @@
     width: 100%
   .package
     &-wrapper
-      grid-template-rows: auto
-      grid-template-columns: 1fr
-      // grid-gap: 20px
+      grid-template: auto / 1fr
+    &-card1
+      height: 800px
+      grid-row: 1
+      grid-column: 1
+      grid-template: 1fr 1fr / 1fr
+    &-card2
+      grid-row: 2
+      grid-column: 1
+    &-card3
+      grid-row: 3
+      grid-column: 1
+    &-card4
+      grid-row: 4
+      grid-column: 1
+    &-card5
+      grid-row: 5
+      grid-column: 1

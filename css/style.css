@@ -719,6 +719,13 @@ template {
   border-radius: 8px;
   overflow: hidden;
 }
+.package-card1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 .package-image {
   position: relative;
 }
@@ -772,7 +779,7 @@ template {
   color: #fff;
 }
 .package-description-one {
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 .package-price {
   display: grid;
@@ -813,14 +820,6 @@ template {
 
 .flash-button--one {
   padding: 8px 12px;
-}
-
-.card1-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-start: 1;
-  grid-column-end: 3;
 }
 
 .package__button {
@@ -1121,6 +1120,10 @@ template {
     width: 230px;
     height: 230px;
   }
+
+  .package-description-one {
+    margin-bottom: 25px;
+  }
 }
 @media (max-width: 992px) {
   .container, .newsletter-wrapper {
@@ -1208,7 +1211,13 @@ template {
     grid-gap: 20px;
   }
   .package-info--one {
-    padding: 30px 20px;
+    padding: 35px 20px 30px 40px;
+  }
+  .package-info__text {
+    margin-bottom: 45px;
+  }
+  .package-description-one {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -1335,11 +1344,25 @@ template {
     width: 48%;
   }
 
+  .package-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .package-info__text {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
+    overflow: auto;
+  }
+  .package-info--one {
+    padding: 30px 20px;
   }
   .package-description {
-    margin-bottom: 27px;
+    grid-row-gap: 5px;
+    margin-bottom: 5px;
+  }
+  .package__button {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 576px) {
@@ -1385,7 +1408,28 @@ template {
   }
 
   .package-wrapper {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
+    grid-template: auto/1fr;
+  }
+  .package-card1 {
+    height: 800px;
+    grid-row: 1;
+    grid-column: 1;
+    grid-template: 1fr 1fr/1fr;
+  }
+  .package-card2 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .package-card3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .package-card4 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .package-card5 {
+    grid-row: 5;
+    grid-column: 1;
   }
 }/*# sourceMappingURL=style.css.map */
